@@ -3,7 +3,7 @@ var sass = require('gulp-sass');
 gulp.task('sass', function() {
 	return gulp.src(['src/sass/main.scss'])
 		.pipe(sass().on('error', util.log))
-        //.pipe(rename('pinfra.css'))
+        //.pipe(rename('newname.css'))
 		.pipe(gulp.dest('public/css'))
 		.pipe(reload({stream: true}));
 });
