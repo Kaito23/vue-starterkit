@@ -21,3 +21,5 @@ requireDir('./gulp');
 gulp.task('default',  gulp.parallel(startBackendServer, 'nunjucks', 'sass', 'copy-images' , 'scripts', 'watch', 'browser-sync')); //, 'minify-css' , 'scripts'
 
 gulp.task('test',  gulp.parallel('nunjucks', 'sass', 'scripts')); //, 'minify-css' , 'scripts'
+
+gulp.task('build',  gulp.parallel('nunjucks', 'sass', 'scripts')); //, 'minify-css' , 'scripts'
