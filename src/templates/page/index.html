@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "../render/html_head.njk" %}
+<body>
+
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="container">
+	{% block main %}{% endblock %}
+</div>
+    
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="script/main.js"></script>
+
+<!-- End Document -->
+</body>
+</html>
